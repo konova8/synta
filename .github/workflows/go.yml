@@ -18,14 +18,14 @@ jobs:
       with:
         go-version: 1.19
 
-    - name: Build
-      run: go build -o synta -v
-
     - name: Test
       run: go test -v ./...
+
+    - name: Build
+      run: cd cmd && go build -o synta -v
       
     - name: Upload Go binary
       uses: actions/upload-artifact@v3
       with:
         name: synta
-        path: ./synta
+        path: ./cmd/synta
