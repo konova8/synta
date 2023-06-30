@@ -27,5 +27,5 @@ jobs:
     - name: Upload Go test results
       uses: actions/upload-artifact@v3
       with:
-        name: synta_exe
+        name: synta
         path: cmd/synta
