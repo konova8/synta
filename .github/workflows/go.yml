@@ -29,11 +29,4 @@ jobs:
       with:
         name: synta
         path: ./cmd/synta
-        
-    - name: Create Release
-      uses: ncipollo/release-action@v1.12.0
-      with:
-        # An optional set of paths representing artifacts to upload to the release. This may be a single path or a comma delimited list of paths (or globs)
-        artifacts: ./cmd/synta
-        # An optional tag for the release. If this is omitted the git ref will be used (if it is a tag).
-        tag: v1.0.1
+
